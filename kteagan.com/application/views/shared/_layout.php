@@ -15,23 +15,27 @@
 	<title>kteagan.com</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-	<link rel="stylesheet" type="text/css" href="/css/site.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/site.css'); ?>">
 </head>
 <body>
 
     <?php $this->load->view('shared/_navbar'); ?>
 
     <aside class="marquee-left hidden-xs">
-        <p><a href="/" <?php if ($isActive === 'home'): ?>class="active"<?php endif; ?>>KELLY WEBBER</a></p>
+        <p><a href="<?php echo site_url(); ?>" <?php if ($isActive === 'home'): echo 'class="active"'; endif; ?>>KELLY WEBBER</a></p>
     </aside>
 
 	<aside class="marquee hidden-xs">
 		<p>
-			<a href="/about" <?php if ($isActive === 'about'): ?>class="active"<?php endif; ?>>ABOUT</a>
+			<a href="<?php echo site_url('about'); ?>" <?php if ($isActive === 'about'): echo 'class="active"'; endif; ?>>ABOUT</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://www.dropbox.com/s/02klhtxzbhw3y9b/KellyWebber_Resume_020317.pdf?dl=0" target="_blank" <?php if ($isActive === 'resume'): ?>class="active"<?php endif; ?>>RESUME</a>
+			<a href="https://www.dropbox.com/s/02klhtxzbhw3y9b/KellyWebber_Resume_020317.pdf?dl=0" target="_blank" <?php if ($isActive === 'resume'): echo 'class="active"'; endif; ?>>RESUME</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="/elsewhere" <?php if ($isActive === 'elsewhere'): ?>class="active"<?php endif; ?>>ELSEWHERE</a>
+            <a href="<?php echo site_url('elsewhere'); ?>" <?php 
+                if ($isActive === 'elsewhere'): 
+                    echo 'class="active"'; 
+                    endif; 
+            ?>>ELSEWHERE</a>
 		</p>
 	</aside>
 

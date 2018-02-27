@@ -19,6 +19,6 @@
 
 <div class="row footer-nav">
     <div class="col-sm-12 col-sm-offset-1 col-sm-10">
-        <a href="/<?php echo $p; ?>">PREVIOUS</a>|<a href="/<?php echo $t; ?>">BACK TO TOP</a>|<a href="/<?php echo $n; ?>">NEXT</a>'
+        <a href="<?php echo site_url($p); ?>">PREVIOUS</a>|<a href="<?php echo site_url($t); ?>">BACK TO TOP</a>|<a href="<?php echo site_url($n); ?>">NEXT</a>'
     </div>
 </div>
