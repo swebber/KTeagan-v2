@@ -8,6 +8,7 @@ class Terra extends MY_Controller
         $this->data['prev'] = 'california-tortilla';
         $this->data['top'] = 'terra';
         $this->data['next'] = 'intention';
+        $this->data['title'] = 'Terra';
 
 		$this->load->view('terra/index', $this->data);
 	}
