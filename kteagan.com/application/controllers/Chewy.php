@@ -5,10 +5,11 @@ class Chewy extends MY_Controller
 {
     public function index()
 	{
-        $data['prev'] = 'intention';
-        $data['top'] = 'chewy';
-        $data['next'] = 'waldens';
+        $this->data['prev'] = 'intention';
+        $this->data['top'] = 'chewy';
+        $this->data['next'] = 'waldens';
+        $this->data['title'] = 'Chewy';
 
-		$this->load->view('chewy/index', $data);
+		$this->load->view('chewy/index', $this->data);
 	}
 }

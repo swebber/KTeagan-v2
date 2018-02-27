@@ -5,10 +5,11 @@ class Meat extends MY_Controller
 {
     public function index()
 	{
-        $data['prev'] = 'waldens';
-        $data['top'] = 'meat';
-        $data['next'] = 'typographic';
+        $this->data['prev'] = 'waldens';
+        $this->data['top'] = 'meat';
+        $this->data['next'] = 'typographic';
+        $this->data['title'] = 'Meat';
 
-		$this->load->view('meat/index', $data);
+		$this->load->view('meat/index', $this->data);
 	}
 }

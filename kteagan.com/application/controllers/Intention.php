@@ -5,10 +5,11 @@ class Intention extends MY_Controller
 {
     public function index()
 	{
-        $data['prev'] = 'terra';
-        $data['top'] = 'intention';
-        $data['next'] = 'chewy';
+        $this->data['prev'] = 'terra';
+        $this->data['top'] = 'intention';
+        $this->data['next'] = 'chewy';
+        $this->data['title'] = 'Intention';
 
-		$this->load->view('intention/index', $data);
+		$this->load->view('intention/index', $this->data);
 	}
 }

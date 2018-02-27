@@ -5,10 +5,10 @@ class Terra extends MY_Controller
 {
     public function index()
 	{
-        $data['prev'] = 'california-tortilla';
-        $data['top'] = 'terra';
-        $data['next'] = 'intention';
+        $this->data['prev'] = 'california-tortilla';
+        $this->data['top'] = 'terra';
+        $this->data['next'] = 'intention';
 
-		$this->load->view('terra/index', $data);
+		$this->load->view('terra/index', $this->data);
 	}
 }

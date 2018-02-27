@@ -21,7 +21,9 @@ class Home extends MY_Controller {
 
 	public function index()
 	{
-		$data['active'] = 'home';
-		$this->load->view('home/index', $data);
+        $this->data['active'] = 'home';
+        $this->data['title'] = 'Home';
+        
+		$this->load->view('home/index', $this->data);
 	}
 }

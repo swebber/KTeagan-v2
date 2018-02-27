@@ -5,10 +5,11 @@ class California_Tortilla extends MY_Controller
 {
     public function index()
 	{
-        $data['prev'] = 'trivalent';
-        $data['top'] = 'california-tortilla';
-        $data['next'] = 'terra';
+        $this->data['prev'] = 'trivalent';
+        $this->data['top'] = 'california-tortilla';
+        $this->data['next'] = 'terra';
+        $this->data['title'] = 'California Tortilla';
 
-		$this->load->view('california-tortilla/index', $data);
+		$this->load->view('california-tortilla/index', $this->data);
 	}
 }

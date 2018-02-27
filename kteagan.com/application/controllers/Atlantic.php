@@ -5,10 +5,11 @@ class Atlantic extends MY_Controller
 {
     public function index()
 	{
-        $data['prev'] = 'typographic';
-        $data['top'] = 'atlantic';
-        $data['next'] = 'trivalent';
+        $this->data['prev'] = 'typographic';
+        $this->data['top'] = 'atlantic';
+        $this->data['next'] = 'trivalent';
+        $this->data['title'] = 'Atlantic Magazine';
 
-		$this->load->view('atlantic/index', $data);
+		$this->load->view('atlantic/index', $this->data);
 	}
 }

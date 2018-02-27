@@ -5,7 +5,9 @@ class Elsewhere extends MY_Controller
 {
     public function index()
 	{
-		$data['active'] = 'elsewhere';
-		$this->load->view('elsewhere/index', $data);
+        $this->data['active'] = 'elsewhere';
+        $this->data['title'] = 'Elsewhere';
+        
+		$this->load->view('elsewhere/index', $this->data);
 	}
 }

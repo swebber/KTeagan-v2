@@ -5,6 +5,11 @@
     if (isset($active)) {
         $isActive = $active;
     }
+
+    $pageTitle = 'kteagan.com';
+    if (isset($title)) {
+        $pageTitle = $title . ' - ' . $pageTitle;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +17,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>kteagan.com</title>
+	<title><? echo $pageTitle; ?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/site.css'); ?>">

@@ -5,10 +5,11 @@ class Typographic extends MY_Controller
 {
     public function index()
 	{
-        $data['prev'] = 'meat';
-        $data['top'] = 'typographic';
-        $data['next'] = 'atlantic';
+        $this->data['prev'] = 'meat';
+        $this->data['top'] = 'typographic';
+        $this->data['next'] = 'atlantic';
+        $this->data['title'] = 'Typographic';
 
-		$this->load->view('typographic/index', $data);
+		$this->load->view('typographic/index', $this->data);
 	}
 }

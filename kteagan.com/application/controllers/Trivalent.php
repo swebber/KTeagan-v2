@@ -5,10 +5,11 @@ class Trivalent extends MY_Controller
 {
     public function index()
 	{
-        $data['prev'] = 'atlantic';
-        $data['top'] = 'trivalent';
-        $data['next'] = 'california-tortilla';
+        $this->data['prev'] = 'atlantic';
+        $this->data['top'] = 'trivalent';
+        $this->data['next'] = 'california-tortilla';
+        $this->data['title'] = 'Trivalent';
 
-		$this->load->view('trivalent/index', $data);
+		$this->load->view('trivalent/index', $this->data);
 	}
 }

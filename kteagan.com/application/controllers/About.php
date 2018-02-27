@@ -5,7 +5,9 @@ class About extends MY_Controller
 {
     public function index()
 	{
-		$data['active'] = 'about';
-		$this->load->view('about/index', $data);
+        $this->data['active'] = 'about';
+        $this->data['title'] = 'About';
+        
+		$this->load->view('about/index', $this->data);
 	}
 }
